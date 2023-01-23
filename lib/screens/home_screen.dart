@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:instagram_clone_app/widgets/feed_list_widget.dart';
 import 'package:instagram_clone_app/widgets/story_list_widget.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -32,6 +33,7 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: const [
             StoryListWidget(),
+            FeedListWidget(),
           ],
         ),
       ),
