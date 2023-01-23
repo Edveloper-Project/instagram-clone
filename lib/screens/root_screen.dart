@@ -35,6 +35,7 @@ class _RootScreenState extends State<RootScreen> {
     return Scaffold(
       body: _body[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.black,
         showSelectedLabels: false,
         showUnselectedLabels: false,
         type: BottomNavigationBarType.fixed,

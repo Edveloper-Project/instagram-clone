@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:instagram_clone_app/widgets/story_list_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -8,6 +9,8 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.black,
         title: SvgPicture.asset('assets/icons/logo.svg'),
         actions: [
           IconButton(
@@ -24,8 +27,13 @@ class HomeScreen extends StatelessWidget {
           )
         ],
       ),
-      body: const Center(
-        child: Text("Home"),
+      body: Container(
+        color: Colors.black,
+        child: Column(
+          children: const [
+            StoryListWidget(),
+          ],
+        ),
       ),
     );
   }
